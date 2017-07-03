@@ -1,0 +1,586 @@
+<!DOCTYPE HTML>
+<html ng-app="MyApp">
+	<head>
+		<title>Aren Wells</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+                        <img src="images/me1.jpg" />
+						<h1>Aren Wells</h1>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Aren Wells</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a ng-click="template='home'">This is Me</a></li>
+							<li><a ng-click="template='work'">Work Experience</a></li>
+							<li><a ng-click="template='projects'">Projects</a></li>
+                            <li><a ng-click="template='education'">Education</a></li>
+                            <li><a ng-click="template='contact'">Contact</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/ajwc5f" class="icon fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+                        <div ng-init="template='home'">
+                            <div ng-include="template"></div>
+                        </div>
+					</div>
+                
+                    <script type="text/ng-template" id="home">
+                        <section class="post">
+				            <header class="major">
+                                <h1>This is me.</h1>
+				            </header>
+                            <p>If you've made it this far, then you already know my name is Aren Wells. I'm
+                                a coder at heart with a passion for data analysis, machine learning, front-end development, back-end development, cloud computing, desktop support and administration, and statistics. I just graduated from the University of Missouri, and am ready to move on to bigger and better things. Code is not my only obsession, however. I also cannot get enough of travelling, food, breweries, music, film, art, and animals.</p>
+                            <div class="box alt">
+										<div class="row 50% uniform">
+											<div class="4u"><span class="image fit"><img src="images/IMG_1783.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/IMG_2022.jpg" alt="" /></span></div>
+											<div class="4u$"><span class="image fit"><img src="images/IMG_2066.jpg" alt="" /></span></div>
+											<!-- Break -->
+											<div class="4u"><span class="image fit"><img src="images/IMG_1920.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/IMG_5314.jpg" alt="" /></span></div>
+											<div class="4u$"><span class="image fit"><img src="images/IMG_4030.jpg" alt="" /></span></div>
+											<!-- Break -->
+											<div class="4u"><span class="image fit"><img src="images/IMG_1643.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/IMG_2037.jpg" alt="" /></span></div>
+											<div class="4u$"><span class="image fit"><img src="images/IMG_7828.jpg" alt="" /></span></div>
+										</div>
+									</div>
+
+                            
+				            
+				        </section>
+                    </script>
+                
+                    <script type="text/ng-template" id="work">
+                        <section class="post">
+                            <header class="major">
+                                <h1>Dont bother me, I'm Working.</h1>
+                            </header>
+                            <hr/>
+				            <header>
+                                <h2>Student Assistant</h2>
+								<p>MU Division of Biological Sciences - IT Department | Sept 2014 - May 2017</p>
+                            </header>
+                            <hr/>
+                            <ul>
+                                <li>In charge of supporting the implementation, monitoring, and maintenance of all IT systems.</li>
+                                <li>Helped to achieve a 100% incident resolution rate using BMC Remedy with Smart IT.</li>
+                                <li>Responded to client questions, problems, and work requests on a daily basis, face to face and over the phone.</li>
+                                <li>Provided desktop support for both Windows and OSX operating systems.</li>
+                            </ul>
+                            <br/>
+                            <hr/>
+                            <header>
+                                <h2>Data Analyst - Undergrad Research Assistant</h2>
+								<p>MU Division of Biological Sciences | May 2016 - Sept 2016</p>
+				            </header>
+                            <hr/>
+                            <ul>
+                                <li>Performed RNA sequencing data analysis and visualization using R, cummeRbund, Cufflinks, and SQLite, for a study published by the Oxford University Press. </li>
+                                <li>Helped to identify and visualize differentially expressed genes and features.</li>
+                                <li>Performed analysis and visualization at the gene and gene subset levels.</li>
+                                <li>Experimented with data exploration such as identifying patterns of gene expression and similarity analysis.</li>
+                            </ul>
+							</section>
+                    </script>
+                
+                    <script type="text/ng-template" id="projects">
+                        <section class="post">
+                            <header class="major">
+                                <h1>Check out my stuff.</h1>
+                                <p>From Mario and abalone to drum pads and beer, these are some of my most proud creations.<br/> Have a look.</p>
+                            </header>
+				            <div class="box alt">
+										<div class="row 50% uniform">
+											<div class="6u"><span class="image fit slide">
+                                                <figure>
+                                                    <a href="https://github.com/ajwc5f/MarEvo"><img src="images/mario.png" alt="" />
+                                                    <figcaption>
+                                                        <h3>MarEvo</h3>
+                                                        <hr/>
+                                                        <p>A Super Mario Bros. machine learning approach using neuroevolution by way of an EANT/NEAT algorithm. </p>
+                                                    </figcaption>
+                                                    </a>
+                                                </figure>
+                                                
+                                            </span></div>
+											<div class="6u$"><span class="image fit">
+                                                <figure>
+                                                    <a href="https://github.com/ajwc5f/Logboat-Database"><img src="images/lb.png" alt="" />
+                                                    <figcaption>
+                                                        <h3>Logboat Brewing Database</h3>
+                                                        <hr/>
+                                                        <p>Database system and UI for back room operations, designed for Logboat Brewing Co. in Columbia, MO. </p>
+                                                    </figcaption>
+                                                    </a>
+                                                </figure>
+                                            </span></div>
+                                            <div class="6u"><span class="image fit">
+                                                <figure>
+                                                    <a href="https://github.com/ajwc5f/Abalone-Classification"><img src="images/aba.jpeg" alt="" />
+                                                    <figcaption>
+                                                        <h3>Abalone Classification</h3>
+                                                        <hr/>
+                                                        <p>Age and sex classification of abalone, using linear and logistic regessions.</p>
+                                                    </figcaption>
+                                                    </a>
+                                                </figure>
+                                            </span></div>
+											<!-- Break -->
+                                            <div class="6u$"><span class="image fit">
+                                                <figure>
+                                                    <a href="https://github.com/ajwc5f/SE2016group7"><img src="images/li.png" alt="" />
+                                                    <figcaption>
+                                                        <h3>Psuedo-LinkedIn</h3>
+                                                        <hr/>
+                                                        <p>A recreation of the popular LinkedIn web app.</p>
+                                                    </figcaption>
+                                                    </a>
+                                                </figure>
+                                            </span></div>
+                                            <div class="6u"><span class="image fit">
+                                                <figure>
+                                                    <a href="https://github.com/ajwc5f/CreatePad"><img src="images/fri1.jpeg" alt="" />
+                                                    <figcaption>
+                                                        <h3>CreatePad</h3>
+                                                        <hr/>
+                                                        <p>A web-based customizable drum pad.</p>
+                                                    </figcaption>
+                                                    </a>
+                                                </figure>
+                                            </span></div>
+                                            <div class="6u$"><span class="image fit">
+                                                <figure>
+                                                    <a href="https://github.com/ajwc5f/CSS-HTML-Editor"><img src="images/hc.png" alt="" />
+                                                    <figcaption>
+                                                        <h3>CSS/HTML Editor</h3>
+                                                        <hr/>
+                                                        <p>CSS & HTML editor/interpreter made with Javascript/CSS/HTML.</p>
+                                                    </figcaption>
+                                                    </a>
+                                                </figure>
+                                                
+                                            </span></div>
+										</div>
+									</div>
+
+				        </section>
+                    </script>
+                
+                    <script type="text/ng-template" id="education">
+                        <section class="post">
+                            <header class="major">
+                                <h1>Graduated from.</h1>
+                            </header>
+                            <header>
+                                <span class="image left mizlogo"><img src="images/mizzou.jpeg" alt="" /></span>
+                                <h2>University of Missouri - Columbia</h2>
+                                <h3>Bachelor of Science in Computer Science</h3>
+                                <p>Minors in Mathematics and Film Studies | 
+                                    College of Engineering Dean's List - Seven Semesters | 
+                                    GPA: 3.45</p>
+                            </header>
+                            <hr/>
+                            <h3>Completed Courses</h3>
+                            <hr/>
+                            <h4>Computer Science</h4>
+                            <div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Course Number</th>
+													<th>Course Name</th>
+													<th>Term</th>
+												</tr>
+											</thead>
+											<tbody>
+                                                <tr>
+													<td>CMP_SC 4980</td>
+													<td>SENIOR CAPSTONE DESIGN II</td>
+													<td>Spring 2017</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 4970</td>
+													<td>SENIOR CAPSTONE DESIGN I</td>
+													<td>Fall 2016</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 4850</td>
+													<td>COMPUTER NETWORKS I</td>
+													<td>Spring 2017</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 4720</td>
+													<td>INTRO TO MACHINE LEARNING</td>
+													<td>Spring 2017</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 4610</td>
+													<td>COMPUTER GRAPHICS I</td>
+													<td>Spring 2016</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 4530</td>
+													<td>CLOUD COMPUTING</td>
+													<td>Spring 2017</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 4520</td>
+													<td>OPERATING SYSTEMS</td>
+													<td>Fall 2016</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 4450</td>
+													<td>PRINCIPLES OF PROGRAMMING LANGUAGES</td>
+													<td>Fall 2016</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 4340</td>
+													<td>BUILDING INTELLIGENT ROBOTS</td>
+													<td>Fall 2016</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 4320</td>
+													<td>SOFTWARE ENGINEERING</td>
+													<td>Spring 2016</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 4050</td>
+													<td>DESIGN &AMP; ANALYSIS OF ALGORITHMS I</td>
+													<td>Spring 2016</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 3380</td>
+													<td>DATABASE APPLICATIONS &AMP; INFORMATION SYSTEMS</td>
+													<td>Fall 2015</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 3330</td>
+													<td>OBJECT ORIENTED PROGRAMMING</td>
+													<td>Fall 2014</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 3280</td>
+													<td>COMPUTER ORGANIZATION &AMP; ASSEMBLY LANGUAGE</td>
+													<td>Fall 2016</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 3050</td>
+													<td>ADVANCED ALGORITHM DESIGN</td>
+													<td>Spring 2015</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 2830</td>
+													<td>INTRO TO THE INTERNET, WWW &AMP; MULTIMEDIA SYSTEMS</td>
+													<td>Spring 2015</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 2270</td>
+													<td>INTRO TO DIGITAL LOGIC</td>
+													<td>Fall 2015</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 2050</td>
+													<td>ALGORITHM DESIGN II</td>
+													<td>Spring 2014</td>
+												</tr>
+                                                <tr>
+													<td>CMP_SC 1050</td>
+													<td>ALGORITHM DESIGN I</td>
+													<td>Fall 2013</td>
+												</tr>
+												<tr>
+													<td>CMP_SC 1000</td>
+													<td>INTRO TO COMPUTER SCIENCE</td>
+													<td>Fall 2013</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+                            
+                                <h4>Information Technology</h4>
+                                    <div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Course Number</th>
+													<th>Course Name</th>
+													<th>Term</th>
+												</tr>
+											</thead>
+											<tbody>
+                                                <tr>
+													<td>INFOTC 3640</td>
+													<td>DIGITAL EFFECTS</td>
+													<td>Fall 2014</td>
+												</tr>
+                                                <tr>
+													<td>INFOTC 2910</td>
+													<td>CYBER SECURITY</td>
+													<td>Fall 2015</td>
+												</tr>
+                                                <tr>
+													<td>INFOTC 2810</td>
+													<td>FUNDAMENTALS OF NETWORK TECHNOLOGY</td>
+													<td>Spring 2015</td>
+												</tr>
+                                                <tr>
+													<td>INFOTC 2620</td>
+													<td>COMPUTER MODELING &AMP; ANIMATION I</td>
+													<td>Fall 2014</td>
+												</tr>
+                                                <tr>
+													<td>INFOTC 2610</td>
+													<td>AUDIO/VIDEO I</td>
+													<td>Spring 2014</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+                            
+                            <h4>Mathematics</h4>
+                                    <div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Course Number</th>
+													<th>Course Name</th>
+													<th>Term</th>
+												</tr>
+											</thead>
+											<tbody>
+                                                <tr>
+													<td>STAT 4710</td>
+													<td>INTRO TO MATHEMATICAL STATISTICS</td>
+													<td>Spring 2016</td>
+												</tr>
+                                                <tr>
+													<td>MATH 4140</td>
+													<td>MATRIX THEORY</td>
+													<td>Summer 2016</td>
+												</tr>
+                                                <tr>
+													<td>MATH 2320</td>
+													<td>DISCRETE MATH STRUCTURES</td>
+													<td>Fall 2015</td>
+												</tr>
+                                                <tr>
+													<td>MATH 2300</td>
+													<td>CALCULUS III</td>
+													<td>Spring 2015</td>
+												</tr>
+                                                <tr>
+													<td>MATH 1700</td>
+													<td>CALCULUS II</td>
+													<td>Fall 2014</td>
+												</tr>
+                                                <tr>
+													<td>MATH 1500</td>
+													<td>ANALYTIC GEMOMETRY &AMP; CALCULUS I</td>
+													<td>Spring 2014</td>
+												</tr>
+                                                <tr>
+													<td>MATH 1160</td>
+													<td>PRECALCULUS MATHEMATICS</td>
+													<td>Fall 2013</td>
+												</tr>
+                                                <tr>
+													<td>MATH 1100</td>
+													<td>COLLEGE ALGEBRA</td>
+													<td>Fall 2013</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+                            
+                            <h4>Other</h4>
+                            <div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Course Number</th>
+													<th>Course Name</th>
+													<th>Term</th>
+												</tr>
+											</thead>
+											<tbody>
+                                                <tr>
+													<td>AR_H_A 2860</td>
+													<td>THE LIVES OF OBJECTS</td>
+													<td>Spring 2015</td>
+												</tr>
+                                                <tr>
+													<td>BIO_SC 1030</td>
+													<td>GENERAL PRINCIPLES &AMP; CONCEPT BIO W/ LAB</td>
+													<td>Fall 2013</td>
+												</tr>
+                                                <tr>
+													<td>BIO_SC BIOL</td>
+													<td>BIO SCI LAB TRANSFER CREDIT</td>
+													<td>Fall 2016</td>
+												</tr>
+                                                <tr>
+													<td>CHEM 1100</td>
+													<td>ATOMS &AMP; MOLECULES W/ LAB</td>
+													<td>Summer 2015</td>
+												</tr>
+                                                <tr>
+													<td>COMMUN 1200</td>
+													<td>PUBLIC SPEAKING</td>
+													<td>Fall 2014</td>
+												</tr>
+                                                <tr>
+													<td>ENGLSH 1000</td>
+                                                    <td>EXPOSITION &AMP; ARGUMENTATION</td>
+													<td>Spring 2014</td>
+												</tr>
+                                                <tr>
+													<td>FILM_S 1800</td>
+													<td>INTRO TO FILM STUDIES</td>
+													<td>Fall 2015</td>
+												</tr>
+                                                <tr>
+													<td>FILM_S 2820</td>
+													<td>TRENDS IN WORLD CINEMA</td>
+													<td>Summer 2016</td>
+												</tr>
+                                                <tr>
+													<td>FILM_S 2840</td>
+													<td>AMERICAN FILM HISTORY II</td>
+													<td>Spring 2016</td>
+												</tr>
+                                                <tr>
+													<td>FILM_S 3540</td>
+													<td>PRINCIPLES OF CINEMATOGRAPHY</td>
+													<td>Fall 2016</td>
+												</tr>
+                                                <tr>
+													<td>HIST 1200</td>
+													<td>SURVEY OF AMERICAN HISTORY SINCE 1865</td>
+													<td>Fall 2013</td>
+												</tr>
+                                                <tr>
+													<td>POL_SC 1100</td>
+													<td>AMERICAN GOVERNMENT</td>
+													<td>Fall 2013</td>
+												</tr>
+                                                <tr>
+													<td>PSYCH 1000</td>
+													<td>GENERAL PSYCHOLOGY</td>
+													<td>Fall 2014</td>
+												</tr>
+                                                <tr>
+													<td>SPAN 1100A</td>
+													<td>ELEMENTARY SPANISH I</td>
+													<td>Fall 2013</td>
+												</tr>
+                                                <tr>
+													<td>SPAN 1100B</td>
+													<td>ELEMENTARY SPANISH II</td>
+													<td>Fall 2013</td>
+												</tr>
+                                                <tr>
+													<td>SPAN 2100</td>
+													<td>ELEMENTARY SPANISH III</td>
+													<td>Fall 2013</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+                            
+                            
+                        </section>
+                    </script>
+
+				    <script type="text/ng-template" id="contact">
+
+                        <header class="major">
+                            <h1>Are you talkin' to me?</h1>
+                            <p>Feel free to contact me using any of the the methods below.</p>
+                        </header>
+					   <footer id="footer">
+						  <section>
+							<form method="post" action="#">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="3"></textarea>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>608 Wilkes Blvd.<br />
+								Columbia, MO 65201</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(417) 825-2311</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">arenwells3@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Github</h3>
+								<ul class="icons alt">
+									<li><a href="https://github.com/ajwc5f" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							 </section>
+						  </section>
+					   </footer>
+                    </script>
+                
+
+			</div>
+
+	</body>
+</html>
