@@ -4006,7 +4006,7 @@
 			-ms-flex-shrink: 1;
 			flex-shrink: 1;
 			padding: 4rem 4rem 2rem 4rem ;
-			border-left: solid 2px #e52b2b;
+			/*border-left: solid 2px #e52b2b;*/
 		}
 
 			#footer > section:first-child {
