@@ -6,21 +6,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.scrollex.min.js"></script>
         <script src="assets/js/jquery.scrolly.min.js"></script>
         <script src="assets/js/skel.min.js"></script>
         <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
         <script src="bower_components/angular/angular.js"></script>
 		<script src="bower_components/angular-route/angular-route.js"></script>
         <script src="bower_components/angular-animate/angular-animate.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
 		<script src="app.js"></script>
 	</head>
-	<body class="is-loading">
+	<body ng-controller="AppController" class="is-loading">
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
@@ -622,6 +620,5 @@
                 
 
 			</div>
-
 	</body>
 </html>

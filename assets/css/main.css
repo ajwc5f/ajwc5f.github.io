@@ -3535,7 +3535,7 @@
 						background-color: #ffffff;
 					}
 
-				#nav ul.links li.active {
+				/*#nav ul.links li.active {
 					background-color: #e52b2b;
 				}
 
@@ -3545,7 +3545,7 @@
 
 						#nav ul.links li.active a:hover {
 							color: #e52b2b !important;
-						}
+						}*/
 
 		#nav ul.icons {
 			-moz-flex-grow: 0;
@@ -4525,3 +4525,11 @@ figure:hover figcaption {
     left: 0;
 }
 
+.active {
+    background-color: #e52b2b;
+    color: #1e252d !important;
+}
+
+.active a {
+    color: #1e252d !important;
+}
