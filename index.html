@@ -4,18 +4,17 @@
 		<title>Aren Wells</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        
+
 		<link rel="stylesheet" href="assets/css/main.css" />
-        
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/skel.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="bower_components/angular/angular.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
 		<script src="bower_components/angular-route/angular-route.js"></script>
-        <script src="bower_components/angular-animate/angular-animate.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
 		<script src="app.js"></script>
 	</head>
 	<body ng-controller="AppController" class="is-loading">
@@ -43,8 +42,8 @@
 							<li class="active"><a ng-click="template='home'">This is Me</a></li>
 							<li><a ng-click="template='work'">Work Experience</a></li>
 							<li><a ng-click="template='projects'">Projects</a></li>
-                            <li><a ng-click="template='education'">Education</a></li>
-                            <li><a ng-click="template='contact'">Contact</a></li>
+              <li><a ng-click="template='education'">Education</a></li>
+              <li><a ng-click="template='contact'">Contact</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://github.com/ajwc5f" class="icon fa-github"><span class="label">GitHub</span></a></li>
@@ -53,18 +52,18 @@
 
 				<!-- Main -->
 					<div id="main">
-                        <div ng-init="template='home'">
-                            <div ng-include="template"></div>
-                        </div>
+          	<div ng-init="template='home'">
+              <div ng-include="template"></div>
+            </div>
 					</div>
-                
+
                     <script type="text/ng-template" id="home">
                         <section class="post">
 				            <header class="major">
                                 <h1>This is me.</h1>
 				            </header>
                             <p>If you've made it this far, then you already know my name is Aren Wells. I'm
-                                a coder at heart with a passion for data analysis, machine learning, front-end development, back-end development, cloud computing, desktop support and administration, and statistics. I just graduated from the University of Missouri, and am ready to move on to bigger and better things. Code is not my only obsession, however. I also cannot get enough of travelling, food, breweries, music, film, art, and animals.</p>
+                                a coder at heart with a passion for data analysis, machine learning, front-end development, back-end development, cloud computing, and statistics. I just graduated from the University of Missouri, and am ready to move on to bigger and better things. Code is not my only obsession, however. I also cannot get enough of travelling, food, breweries, music, film, art, and animals.</p>
                             <div class="box alt">
 										<div class="row 50% uniform">
 											<div class="4u"><span class="image fit"><img src="images/IMG_1783.jpg" alt="" /></span></div>
@@ -81,11 +80,11 @@
 										</div>
 									</div>
 
-                            
-				            
+
+
 				        </section>
                     </script>
-                
+
                     <script type="text/ng-template" id="work">
                         <section class="post">
                             <header class="major">
@@ -118,7 +117,7 @@
                             </ul>
 							</section>
                     </script>
-                
+
                     <script type="text/ng-template" id="projects">
                         <section class="post">
                             <header class="major">
@@ -128,62 +127,83 @@
 				            <div class="box alt">
 										<div class="row 50% uniform">
 											<div class="6u"><span class="image fit slide">
-                                                <figure>
-                                                    <a href="https://github.com/ajwc5f/MarEvo"><img src="images/mario.png" alt="" />
-                                                    <figcaption>
-                                                        <h3>MarEvo</h3>
-                                                        <hr/>
-                                                        <p>A Super Mario Bros. machine learning approach using neuroevolution by way of an EANT/NEAT algorithm. </p>
-                                                    </figcaption>
-                                                    </a>
-                                                </figure>
-                                                
-                                            </span></div>
+                          <figure>
+                          	<a href="https://github.com/ajwc5f/MarEvo"><img src="images/mario.png" alt="" />
+                              <figcaption>
+                                <h3>MarEvo</h3>
+                                <hr/>
+                                <p>A Super Mario Bros. machine learning approach using neuroevolution by way of an EANT/NEAT algorithm. </p>
+                              </figcaption>
+                            </a>
+                          </figure>
+											</span></div>
 											<div class="6u$"><span class="image fit">
-                                                <figure>
-                                                    <a href="https://github.com/ajwc5f/Logboat-Database"><img src="images/lb.png" alt="" />
-                                                    <figcaption>
-                                                        <h3>Logboat Brewing Database</h3>
-                                                        <hr/>
-                                                        <p>Database system and UI for back room operations, designed for Logboat Brewing Co. in Columbia, MO. </p>
-                                                    </figcaption>
-                                                    </a>
-                                                </figure>
-                                            </span></div>
-                                            <div class="6u"><span class="image fit">
-                                                <figure>
-                                                    <a href="https://github.com/ajwc5f/Abalone-Classification"><img src="images/aba.jpeg" alt="" />
-                                                    <figcaption>
-                                                        <h3>Abalone Classification</h3>
-                                                        <hr/>
-                                                        <p>Age and sex classification of abalone, using linear and logistic regessions.</p>
-                                                    </figcaption>
-                                                    </a>
-                                                </figure>
-                                            </span></div>
+                      	<figure>
+                          <a href="https://github.com/ajwc5f/Logboat-Database"><img src="images/lb.png" alt="" />
+                          	<figcaption>
+                              <h3>Logboat Brewing Database</h3>
+                              <hr/>
+                              <p>Database system and UI for back room operations, designed for Logboat Brewing Co. in Columbia, MO. </p>
+                          	</figcaption>
+                          </a>
+                        </figure>
+                      </span></div>
+											<div class="6u"><span class="image fit slide">
+                          <figure>
+                          	<a href="https://github.com/ajwc5f/dailycommute"><img src="images/dc.png" alt="" />
+                              <figcaption>
+                                <h3>DailyCommute</h3>
+                                <hr/>
+                                <p>Giving daily article suggestions, tailored to the duration of your commute.</p>
+                              </figcaption>
+                            </a>
+                          </figure>
+											</span></div>
+											<div class="6u$"><span class="image fit">
+                      	<figure>
+                          <a href="https://github.com/ajwc5f/medium-assistant"><img src="images/med.png" alt="" />
+                          	<figcaption>
+                              <h3>Medium Digital Assistant</h3>
+                              <hr/>
+                              <p>Uses a trained speech recognition AI to redirect you to the correct tagged pages on medium.com.</p>
+                          	</figcaption>
+                          </a>
+                        </figure>
+                      </span></div>
+                      <div class="6u"><span class="image fit">
+                        <figure>
+                          <a href="https://github.com/ajwc5f/Abalone-Classification"><img src="images/aba.jpeg" alt="" />
+                            <figcaption>
+                              <h3>Abalone Classification</h3>
+                              <hr/>
+                              <p>Age and sex classification of abalone, using linear and logistic regessions.</p>
+                            </figcaption>
+                          </a>
+                        </figure>
+                      </span></div>
 											<!-- Break -->
-                                            <div class="6u$"><span class="image fit">
-                                                <figure>
-                                                    <a href="https://github.com/ajwc5f/SE2016group7"><img src="images/li.png" alt="" />
-                                                    <figcaption>
-                                                        <h3>Psuedo-LinkedIn</h3>
-                                                        <hr/>
-                                                        <p>A recreation of the popular LinkedIn web app.</p>
-                                                    </figcaption>
-                                                    </a>
-                                                </figure>
-                                            </span></div>
-                                            <div class="6u"><span class="image fit">
-                                                <figure>
-                                                    <a href="https://github.com/ajwc5f/Client-Server-Chatroom"><img src="images/chat.png" alt="" />
-                                                    <figcaption>
-                                                        <h3>Chatroom 2.0</h3>
-                                                        <hr/>
-                                                        <p>A local client-server chatroom supporting multiple clients, created using Socket API. </p>
-                                                    </figcaption>
-                                                    </a>
-                                                </figure>
-                                            </span></div>
+                      <div class="6u$"><span class="image fit">
+                        <figure>
+                          <a href="https://github.com/ajwc5f/SE2016group7"><img src="images/li.png" alt="" />
+                            <figcaption>
+                              <h3>Psuedo-LinkedIn</h3>
+                              <hr/>
+                              <p>A recreation of the popular LinkedIn web app.</p>
+                            </figcaption>
+                          </a>
+                        </figure>
+                      </span></div>
+                      <div class="6u"><span class="image fit">
+                        <figure>
+                          <a href="https://github.com/ajwc5f/Client-Server-Chatroom"><img src="images/chat.png" alt="" />
+                            <figcaption>
+                              <h3>Chatroom 2.0</h3>
+                            	<hr/>
+                              <p>A local client-server chatroom supporting multiple clients, created using Socket API. </p>
+                            </figcaption>
+                          </a>
+                        </figure>
+                      </span></div>
                                             <div class="6u$"><span class="image fit">
                                                 <figure>
                                                     <a href="https://github.com/ajwc5f/Unix-model-filesystem"><img src="images/unix.png" alt="" />
@@ -194,7 +214,7 @@
                                                     </figcaption>
                                                     </a>
                                                 </figure>
-                                                
+
                                             </span></div>
                                             <div class="6u"><span class="image fit">
                                                 <figure>
@@ -217,7 +237,7 @@
                                                     </figcaption>
                                                     </a>
                                                 </figure>
-                                                
+
                                             </span></div>
                                             <div class="6u"><span class="image fit">
                                                 <figure>
@@ -240,14 +260,14 @@
                                                     </figcaption>
                                                     </a>
                                                 </figure>
-                                                
+
                                             </span></div>
 										</div>
 									</div>
 
 				        </section>
                     </script>
-                
+
                     <script type="text/ng-template" id="education">
                         <section class="post">
                             <header class="major">
@@ -257,8 +277,8 @@
                                 <span class="image left mizlogo"><img src="images/mizzou.jpeg" alt="" /></span>
                                 <h2>University of Missouri - Columbia</h2>
                                 <h3>Bachelor of Science in Computer Science</h3>
-                                <p>Minors in Mathematics and Film Studies | 
-                                    College of Engineering Dean's List - Seven Semesters | 
+                                <p>Minors in Mathematics and Film Studies |
+                                    College of Engineering Dean's List - Seven Semesters |
                                     GPA: 3.45</p>
                             </header>
                             <hr/>
@@ -378,7 +398,7 @@
 											</tbody>
 										</table>
 									</div>
-                            
+
                                 <h4>Information Technology</h4>
                                     <div class="table-wrapper">
 										<table>
@@ -418,7 +438,7 @@
 											</tbody>
 										</table>
 									</div>
-                            
+
                             <h4>Mathematics</h4>
                                     <div class="table-wrapper">
 										<table>
@@ -473,7 +493,7 @@
 											</tbody>
 										</table>
 									</div>
-                            
+
                             <h4>Other</h4>
                             <div class="table-wrapper">
 										<table>
@@ -568,8 +588,8 @@
 											</tbody>
 										</table>
 									</div>
-                            
-                            
+
+
                         </section>
                     </script>
 
@@ -581,7 +601,8 @@
                         </header>
 					   <footer id="footer">
 						  <section>
-							<form method="post" action="#">
+                            <!--http://postb.in/9dBPZMoF-->
+							<form method="post" action="http://mockbin.org/bin/2c49ed71-fc89-4f7d-9af4-926136cc2918e">
 								<div class="field">
 									<label for="name">Name</label>
 									<input type="text" name="name" id="name" />
@@ -617,7 +638,7 @@
 						  </section>
 					   </footer>
                     </script>
-                
+
 
 			</div>
 	</body>
