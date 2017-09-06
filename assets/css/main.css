@@ -4510,7 +4510,7 @@ figcaption {
     -o-transition:      all 0.6s ease;
 }
 
-figcaption > h3 {
+figcaption > h3, h5, li {
     color: #fff;
     margin-bottom: 5px;
 }
