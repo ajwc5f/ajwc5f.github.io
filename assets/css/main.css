@@ -4510,12 +4510,12 @@ figcaption {
     -o-transition:      all 0.6s ease;
 }
 
-figcaption h3 {
+figcaption > h3 {
     color: #fff;
     margin-bottom: 5px;
 }
 
-figcaption hr {
+figcaption > hr {
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -4532,12 +4532,4 @@ figure:hover figcaption {
 
 .active a {
     color: #1e252d !important;
-}
-
-li {
-	color: #fff;
-}
-
-.white {
-	color: #fff;
 }
